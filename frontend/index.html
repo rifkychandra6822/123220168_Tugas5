@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifky Chandra -123220168</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notes</h1>
+        <form id="noteForm" class="note-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="catatan" placeholder="Write your note here..." required></textarea>
+            <input type="date" id="date" required>
+            <button type="submit">Add Note</button>
+        </form>
+        <div id="notesList" class="notes-list"></div>
+    </div>
+
+    <!-- Modal untuk Edit -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Note</h2>
+            <form id="editNoteForm" class="edit-note-form">
+                <input type="text" id="editName" placeholder="Your Name" required>
+                <textarea id="editCatatan" placeholder="Write your note here..." required></textarea>
+                <input type="date" id="editDate" required>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
