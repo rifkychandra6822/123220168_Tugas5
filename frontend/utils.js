@@ -1,1 +1,1 @@
-const BASE_URL = "http://localhost:5500"
+const BASE_URL = "https://notes-backend168-245069416476.us-central1.run.app/"
